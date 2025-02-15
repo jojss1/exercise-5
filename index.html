@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+    <title>Exercise 5: CSS Layout</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        p {
+            width: 600px;
+            padding-bottom: 20px;
+        }
+
+        #container1 {
+            width: 1000px;
+            background-color: transparent;
+            clear: both;
+            position: relative;
+            bottom: 20px;
+        }
+
+       #blockA, #blockB, #blockC {
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: top; 
+}
+
+        #blockA {
+            background-color: #96C5F7;
+          
+        }
+
+        #blockB {
+            background-color: #A9D3FF;
+            margin: 0 5px; 
+        }
+
+        #blockC {
+            background-color: #F2F4FF;
+            border: 5px solid; 
+        }
+
+        /* Floating */
+        #container2 {
+            width: 800px; 
+            height: 500px;
+            background-color: #D0D6B5;
+            clear: both;
+        }
+
+        #blockD, #blockE {
+            height: 200px;
+        }
+
+        #blockD {
+            background-color: #F9B5AC;
+            float: left; 
+            width: 75%; 
+        }
+
+        #blockE {
+            background-color: #EE7674;
+            float: right; 
+            width: 25%; 
+        }
+
+        /* Positioning */
+        #container3 {
+            width: 1000px;
+            height: 500px;
+            background-color: #2DE1C2;
+            clear: both;
+            position: relative;
+            top: 20px;
+        }
+#blockG, #blockH {
+    width: 333px;
+    height: 200px;
+    display: inline-block;
+}
+
+#blockG {
+    background-color: #7E998A;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 2; 
+}
+
+#blockH {
+    background-color: #7FBEAB;
+    position: fixed; 
+    top: 470px;
+    left: 100px;
+    z-index: 1; 
+}
+
+    </style>
+</head>
+<body>
+    <h1>Exercise 5: CSS Layout</h1>
+    <p>
+        This week you'll be exploring CSS Layout, which boils it down to three principals: the box model, floating, and positioning. Below, we're going to take a pass at them on their own&mdash;and in combination&mdash;to get a sense of the fundamentals. 
+        <strong><u>These are all a little tricky, and there is no 'right' way to solve them, there are several ways to get the results that have been asked for.</u></strong> 
+        Experiment and pay close attention, the 'floating' example, in particular, is the key to parcelling up a page with HTML/CSS.
+    </p>
+
+    <!-- The Box Model Section -->
+    <div id="container1">
+        <h2>The Box Model</h2>
+        <div id="blockA">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div id="blockB">
+            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        </div>
+        <div id="blockC">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+    </div>
+
+    <!-- Floating Section -->
+    <div id="container2">
+        <h2>Floating</h2>
+        <div id="blockD"></div>
+        <div id="blockE"></div>
+    </div>
+
+    <!-- Positioning Section -->
+    <div id="container3">
+        <h2>Positioning</h2>
+        <div id="blockG"></div>
+        <div id="blockH"></div>
+    </div>
+</body>
+</html>
